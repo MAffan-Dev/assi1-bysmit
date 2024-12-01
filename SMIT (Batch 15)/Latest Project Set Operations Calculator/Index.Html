@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Operations Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Set Operations Calculator</h1>
+        
+        <div class="input-container">
+            <label for="setA">Set A (comma-separated):</label>
+            <input type="text" id="setA" placeholder="e.g. 1,2,3,4">
+        </div>
+
+        <div class="input-container">
+            <label for="setB">Set B (comma-separated):</label>
+            <input type="text" id="setB" placeholder="e.g. 3,4,5,6">
+        </div>
+
+        <div class="button-container">
+            <button onclick="performOperation('union')">Union</button>
+            <button onclick="performOperation('intersection')">Intersection</button>
+            <button onclick="performOperation('difference')">A - B</button>
+            <button onclick="performOperation('complement')">Complement</button>
+        </div>
+
+        <div class="result-container">
+            <h3>Result:</h3>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
